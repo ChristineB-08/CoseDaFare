@@ -56,7 +56,7 @@ function updateTask(id) {
   loadTasks();
   clearForm();
   currentEditId = null;
-  addTaskButton.textContent = "Add Task";
+  addTaskButton.textContent = "Aggiungi";
 }
 
 function renderTask(task) {
@@ -92,17 +92,17 @@ function renderTask(task) {
 
   const editBtn = document.createElement("button");
   editBtn.className = "edit-btn";
-  editBtn.textContent = "Edit";
+  editBtn.textContent = "Modifica";
   editBtn.addEventListener("click", () => {
     currentEditId = task.id;
     taskInput.value = task.text;
     deadlineInput.value = task.deadline || "";
-    addTaskButton.textContent = "Update Task";
+    addTaskButton.textContent = "Aggiorna";
   });
 
   const deleteBtn = document.createElement("button");
   deleteBtn.className = "delete-btn";
-  deleteBtn.textContent = "Delete";
+  deleteBtn.textContent = "Elimina";
   deleteBtn.addEventListener("click", () => {
     tasks = tasks.filter(t => t.id !== task.id);
     saveTasks();
@@ -117,7 +117,7 @@ function renderTask(task) {
 function formatDate(dateString) {
   if (!dateString) return "";
   const date = new Date(dateString);
-  return date.toLocaleDateString("en-UK", {
+  return date.toLocaleDateString("it-IT", {
     year: 'numeric',
     month: 'short',
     day: 'numeric'
@@ -140,7 +140,7 @@ function toggleTheme() {
   document.body.classList.toggle("dark");
 
   lightDarkButton.textContent =
-    document.body.classList.contains("dark") ? "Light" : "Dark";
+    document.body.classList.contains("dark") ? "Chiaro" : "Scuro";
 
   const isDarkMode = document.body.classList.contains("dark");
   lightDarkButton.style.backgroundColor = isDarkMode ? "#f0f0f0" : "#333";
@@ -152,11 +152,11 @@ function toggleTheme() {
 const savedTheme = localStorage.getItem("theme");
 if (savedTheme === "dark") {
   document.body.classList.add("dark");
-  lightDarkButton.textContent = "Light";
+  lightDarkButton.textContent = "Chiaro";
   lightDarkButton.style.backgroundColor = "#f0f0f0";
   lightDarkButton.style.color = "black";
 } else {
-  lightDarkButton.textContent = "Dark";
+  lightDarkButton.textContent = "Scuro";
   lightDarkButton.style.backgroundColor = "#333";
   lightDarkButton.style.color = "white";
 }

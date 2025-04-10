@@ -29,13 +29,13 @@ body.dark {
     background-image: url("../images/background1.jpg");
   }
   25% {
-    background-image: url("../images/background2.png");
+    background-image: url("../images/background2.jpg");
   }
   50% {
-    background-image: url("../images/background3.jpg");
+    background-image: url("../images/background3.png");
   }
   75% {
-    background-image: url("../images/background4.png");
+    background-image: url("../images/background4.jpg");
   }
   100% {
     background-image: url("../images/background1.jpg");
@@ -178,7 +178,7 @@ body.dark {
   top: 0;
   right: 20px;
   margin-top: 20px;
-  padding: 12px 25px;
+  padding: 12px 20px;
   border-radius: 8px;
   background-color: #f0f0f0;
   border: none;
