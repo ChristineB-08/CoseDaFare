@@ -1,0 +1,143 @@
+/* Small Desktop */
+@media (max-width: 1200px) {
+  .container {
+    padding: 30px;
+  }
+
+  #lightDark {
+    margin-right: 12px;
+  }
+
+  .task-item {
+    padding: 14px;
+  }
+
+  #taskInput,
+  #deadlineInput,
+  #addTaskButton {
+    font-size: 16px;
+  }
+
+  .task-text {
+    font-size: 20px;
+  }
+
+  .task-deadline {
+    font-size: 16px;
+  }
+}
+
+/* Big Tablets*/
+@media (max-width: 992px) {
+  .container {
+    margin-top: 20px;
+    padding: 30px;
+  }
+
+  #lightDark {
+    margin-right: 10px;
+    padding: 10px 24px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  #taskInput,
+  #deadlineInput {
+    font-size: 14px;
+  }
+
+  #addTaskButton {
+    font-size: 14px;
+  }
+
+  .task-item {
+    padding: 12px;
+  }
+
+  .task-text {
+    font-size: 16px;
+  }
+
+  .task-deadline {
+    font-size: 14px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  #lightDark {
+    font-size: 14px;
+  }
+  #taskInput,
+  #deadlineInput {
+    font-size: 14px;
+  }
+
+  #addTaskButton {
+    font-size: 14px;
+  }
+
+  .task-item {
+    padding: 10px;
+  }
+
+  .task-text {
+    font-size: 14px;
+  }
+
+  .task-deadline {
+    font-size: 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .container h2 {
+    font-size: 18px;
+  }
+  .input-wrapper {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  #taskInput {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  #deadlineInput {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  #addTaskButton {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .task-item {
+    padding: 8px;
+  }
+
+  .task-text {
+    font-size: 12px;
+  }
+
+  .task-deadline {
+    font-size: 12px;
+  }
+
+  .task-actions {
+    font-size: 12px;
+  }
+
+  .task-deadline {
+    font-size: 11px;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+}
