@@ -65,6 +65,9 @@
 
 /* Tablets */
 @media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem 4rem;
+  }
   #lightDark {
     font-size: 14px;
   }
@@ -92,6 +95,9 @@
 
 /* Mobile */
 @media (max-width: 576px) {
+  .hero {
+    padding: 1rem 0.5rem 2rem;
+  }
   .container h2 {
     font-size: 18px;
   }
@@ -128,6 +134,7 @@
   }
 
   .task-actions {
+    flex-direction: column;
     font-size: 12px;
   }
 
@@ -135,9 +142,12 @@
     font-size: 11px;
   }
 
-  .edit-btn,
-  .delete-btn {
+  .edit-btn{
     font-size: 12px;
     padding: 3px 6px;
+  }
+  .delete-btn {
+    font-size: 12px;
+    padding: 3px 9px;
   }
 }

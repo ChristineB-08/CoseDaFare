@@ -69,6 +69,9 @@ function renderTask(task) {
 
   const taskPara = document.createElement("p");
   taskPara.className = "task-text";
+  if (task.completed) {
+    taskPara.classList.add("completed");
+  }
   taskPara.textContent = task.text;
 
   taskPara.addEventListener("click", () => {
@@ -135,6 +138,8 @@ function clearForm() {
   taskInput.value = "";
   deadlineInput.value = "";
 }
+
+// Attivare tema chiaro o scuro
 
 function toggleTheme() {
   document.body.classList.toggle("dark");
